@@ -3,9 +3,9 @@
 const userPass = document.getElementById("password");
 const userPassRegExp = /(?=^[a-zA-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g;
 
-userPass.addEventListener("input", isCorrectInput);
+userPass.addEventListener("input", isValid);
 
-function isCorrectInput(event) {
+function isValid(event) {
     const {
         target: {value, style},
     } = event;
